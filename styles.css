@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #004A7C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.logo-img {
+    max-width: 200px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav ul li {
+    margin-right: 1rem;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Caixa de pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Seção de Turmas Abertas */
+.turmas-abertas {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.turmas-abertas h2 {
+    font-size: 3rem;
+    color: #004A7C; /* Azul */
+    margin-bottom: 1rem;
+}
+
+.turmas-imagem {
+    width: 80%;
+    max-width: 999px;
+    margin: 1rem 0;
+    height: auto;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 2rem 0;
+}
+
+.faq-section h3 {
+    font-size: 2rem;
+    color: #004A7C; /* Azul */
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h4 {
+    font-size: 1.5rem;
+    color: #004A7C; /* Azul */
+    font-weight: bold;
+}
+
+.faq-item p {
+    color: black;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004A7C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #004A7C;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin: 1rem 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}

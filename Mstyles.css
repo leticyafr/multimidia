@@ -1,0 +1,224 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-img {
+    max-width: 150px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 1rem;
+}
+
+.nav ul li a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Logo média */
+.logo-medium {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo-medium-img {
+    width: 250px;
+}
+
+/* Botões: Aulas Online e Fale Conosco */
+.buttons-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-play, .button-blue {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button-play {
+    background-color: #004A7C;
+    color: white;
+}
+
+.button-play .icon {
+    margin-right: 10px;
+}
+
+.button-play:hover {
+    background-color: #e6eff5;
+}
+
+.button-blue {
+    background-color: #0066CC;
+    color: white;
+}
+
+.button-blue:hover {
+    background-color: #005bb5;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Texto explicativo e imagem */
+.about-course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text strong {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.course-image {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Botões de ação */
+.action-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button-saiba-mais, .button-entrar {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.button-saiba-mais {
+    background-color: #004A7C;
+    color: white;
+}
+
+.button-saiba-mais:hover {
+    background-color: #003a66;
+}
+
+.button-entrar {
+    background-color: #0066CC;
+    color: white;
+}
+
+.button-entrar:hover {
+    background-color: #005bb5;
+}
+
+/* Turmas Abertas */
+.open-classes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.open-classes h2 {
+    font-size: 2rem;
+    color: #004A7C;
+}
+
+.tabela-img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+/* Estatísticas */
+.course-stats {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.course-stats h3 {
+    font-size: 1.8rem;
+    color: #004A7C;
+    margin-bottom: 20px;
+}
+
+.course-stats ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.course-stats ul li {
+    margin-bottom: 10px;
+}
+
+/* Imagem final */
+.final-image {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.final-img {
+    width: 900px;
+    height: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #004A7C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 50px;
+}

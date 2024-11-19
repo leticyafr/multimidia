@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="https://www.senai.br">
+                <img src="senai-logo-1.png" alt="Logo SENAI" class="logo-img">
+            </a>
+        </div>
+
+        <div class="menu-icon" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curso-mecanicaautomotiva.html">Técnico em Mecânica Automotiva</a></li>
+                <li><a href="curso-eletro.html">Técnico em Eletrotecnica</a></li>
+                <li><a href="curso-multimidia.html">Técnico em Multimídia</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar cursos..." class="search-box">
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="banner01.jpeg" alt="Banner 01" class="banner-img">
+        <div class="banner-content">
+        </div>
+    </section>
+
+    <section class="banner banner-2">
+        <img src="mecanica.png" alt="Curso Técnico em Mecânica Automotiva" class="banner-img">
+        <div class="banner-content">
+        </div>
+    </section>
+
+    <section class="banner banner-3">
+        <img src="multimidia.png" alt="Curso Técnico em Multimídia" class="banner-img">
+        <div class="banner-content">
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO ADICIONADA -->
+    <section class="turmas-abertas">
+        <h2>TURMAS ABERTAS</h2>
+        <img src="Tabela01.png" alt="Turmas Abertas - Inscrições Abertas" class="turmas-imagem">
+        <div class="faq-section">
+            <h3>Perguntas Frequentes</h3>
+            <div class="faq-item">
+                <h4>O que são os cursos técnicos integrados do SENAI?</h4>
+                <p>São cursos que combinam o ensino médio e a formação técnica de forma simultânea. O aluno conclui o ensino médio enquanto adquire um diploma técnico em áreas como Mecânica, Informática, Eletroeletrônica, entre outras.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quem pode se inscrever e qual o processo seletivo?</h4>
+                <p>Podem se inscrever estudantes que tenham concluído ou estejam cursando o 9º ano do Ensino Fundamental. A inscrição é feita pelo site do SENAI ou diretamente nas unidades, e o processo seletivo geralmente inclui provas de conhecimento e, em alguns casos, entrevista.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Como posso me inscrever nos cursos técnicos integrados do SENAI?</h4>
+                <p>A inscrição pode ser feita através do site do SENAI do seu estado, onde você pode consultar o calendário de inscrições, realizar o processo seletivo e obter informações sobre os cursos disponíveis. Também é possível se inscrever nas unidades físicas do SENAI.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SENAI | Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
